@@ -9,17 +9,28 @@ html {
 body {
   margin: 0;
   padding: 0;
-  display:flex;
+  height:100vh;
   background:#7A419B;
-  min-height:100vh;
   background: linear-gradient(135deg, #7c1599 0%,#921099 48%,#7e4ae8 100%);
   background-size:cover;
+}
+
+.header {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.playerContainer {
+  display:flex;
   align-items: center;
   justify-content: center;
 }
 
 .player {
-  max-width:750px;
+  width: 60vw;
   border:5px solid rgba(0,0,0,0.2);
   box-shadow:0 0 20px rgba(0,0,0,0.2);
   position: relative;
