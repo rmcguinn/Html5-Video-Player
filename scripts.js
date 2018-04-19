@@ -6,14 +6,18 @@ const progressBar = player.querySelector('.progress__filled');
 const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip]');
 const ranges = player.querySelectorAll('.player__slider');
+const bg = document.querySelector('.bg');
 
 
 // Build Out Functions
 function togglePlay() {
     if(video.paused) {
         video.play();
+        bg.style.opacity = '1';
+        bg.style.transition = 'opacity 850ms linear';
     } else {
         video.pause();
+        bg.style.opacity = '0';
     }
 }
 
